@@ -1,2 +1,4 @@
+course linkedin : 
+	https://www.linkedin.com/learning/advanced-sql-for-application-development/designing-an-ecommerce-application-database?autoplay=true&dApp=53239054&leis=LAA&resume=false&u=2113185
 run postgres docker params : 
    docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
