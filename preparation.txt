@@ -2,3 +2,9 @@ course linkedin :
 	https://www.linkedin.com/learning/advanced-sql-for-application-development/designing-an-ecommerce-application-database?autoplay=true&dApp=53239054&leis=LAA&resume=false&u=2113185
 run postgres docker params : 
    docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
+
+install pgAdmin:
+	docker pull dpage/pgadmin4:latest
+run docker : 
+	docker run -p 380:80 -e PGADMIN_DEFAULT_EMAIL=user@domain.com -e PGADMIN_DEFAULT_PASSWORD=SuperSecret -d dpage/pgadmin4
+for connecting to local docker DB with docker pgAdmin use host.docker.internal instead of localhost
